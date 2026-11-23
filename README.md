@@ -26,22 +26,3 @@ src/decorator/   装饰器模式示例代码
 src/chain/       责任链模式示例代码
 docs/            讲义、PPT、笔记、资料索引
 ```
-
-## 协作约定
-
-1. **分支**：`main` 只保留能上台讲的版本；每人开 `feat/<姓名>-<内容>` 分支，走 PR 合并，不直接推 main。
-2. **commit message**：`<类型>: <说明>`，类型用 `feat` / `fix` / `docs` / `refactor`。例：
-   - `feat: 加星巴兹咖啡摩卡计价示例`
-   - `fix: 责任链末尾未处理请求的空指针`
-3. **不要提交 `资料/` 目录**：教材 PDF 共 153MB，已在 `.gitignore` 排除。需要教材的同学自行拷贝。
-4. 编译产物（`*.class`、`target/`、`out/`）和 IDE 配置（`.idea/`、`.vscode/`）不入库。
-
-## 组员
-
-<!-- 待填：姓名 / GitHub 账号 / 负责部分 -->
-
-| 姓名 | GitHub | 负责 |
-|---|---|---|
-| 程浩 | [@Chenghao-AI](https://github.com/Chenghao-AI) | |
-| | | |
-| | | |
