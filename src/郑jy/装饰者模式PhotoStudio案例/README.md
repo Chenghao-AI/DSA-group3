@@ -1,4 +1,4 @@
-# PhotoStudio 案例讲解文件结构说明
+# PhotoStudio 案例讲解说明
 
 ## 文件夹结构
 
