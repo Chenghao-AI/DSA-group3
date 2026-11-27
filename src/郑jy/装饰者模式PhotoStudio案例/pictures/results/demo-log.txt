@@ -1,0 +1,72 @@
+PhotoStudio | Original -> Grayscale -> Watermark -> Frame -> Brightness -> Blur
+00-original.png  [1280 x 960]
+  Landscape Photo
+  Center RGB: (154, 153, 167)  Bottom-right RGB: (31, 71, 133)
+01-grayscale.png  [1280 x 960]
+  Landscape Photo, Grayscale
+  Center RGB: (154, 154, 154)  Bottom-right RGB: (66, 66, 66)
+02-watermark.png  [1280 x 960]
+  Landscape Photo, Grayscale, Watermark
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (255, 0, 0)
+03-frame.png  [1280 x 960]
+  Landscape Photo, Grayscale, Watermark, Frame
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (0, 180, 0)
+04-brightness.png  [1280 x 960]
+  Landscape Photo, Grayscale, Watermark, Frame, Brightness
+  Center RGB: (255, 60, 60)  Bottom-right RGB: (60, 240, 60)
+05-blur.png  [1280 x 960]
+  Landscape Photo, Grayscale, Watermark, Frame, Brightness, Blur
+  Center RGB: (220, 143, 143)  Bottom-right RGB: (60, 240, 60)
+portrait-full.png  [512 x 512]
+  Portrait Photo, Grayscale, Watermark, Frame, Brightness, Blur
+  Center RGB: (154, 83, 83)  Bottom-right RGB: (60, 240, 60)
+city-full.png  [1024 x 797]
+  Landscape Photo, Grayscale, Watermark, Frame, Brightness, Blur
+  Center RGB: (211, 137, 137)  Bottom-right RGB: (60, 240, 60)
+
+01 | Grayscale and Watermark
+gray-then-watermark.png  [1280 x 960]
+  Landscape Photo, Grayscale, Watermark
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (255, 0, 0)
+watermark-then-gray.png  [1280 x 960]
+  Landscape Photo, Watermark, Grayscale
+  Center RGB: (76, 76, 76)  Bottom-right RGB: (76, 76, 76)
+  PASS: red/gray center watermark
+
+02 | Watermark and Frame
+watermark-then-frame.png  [1280 x 960]
+  Landscape Photo, Watermark, Frame
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (0, 180, 0)
+frame-then-watermark.png  [1280 x 960]
+  Landscape Photo, Frame, Watermark
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (255, 0, 0)
+  PASS: green/red bottom-right pixel
+
+03 | Brightness and Watermark
+brightness-then-watermark.png  [512 x 512]
+  Portrait Photo, Brightness, Watermark
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (255, 0, 0)
+watermark-then-brightness.png  [512 x 512]
+  Portrait Photo, Watermark, Brightness
+  Center RGB: (255, 60, 60)  Bottom-right RGB: (255, 60, 60)
+  PASS: red/light red center watermark
+
+04 | Blur and Watermark
+blur-then-watermark.png  [1024 x 797]
+  Landscape Photo, Blur, Watermark
+  Center RGB: (255, 0, 0)  Bottom-right RGB: (255, 0, 0)
+watermark-then-blur.png  [1024 x 797]
+  Landscape Photo, Watermark, Blur
+  Center RGB: (175, 77, 87)  Bottom-right RGB: (255, 0, 0)
+  PASS: sharp/mixed center watermark pixel
+
+05 | Repeating Brightness
+brightness-once.png  [512 x 512]
+  Portrait Photo, Brightness
+  Center RGB: (79, 74, 67)  Bottom-right RGB: (60, 60, 60)
+brightness-twice.png  [512 x 512]
+  Portrait Photo, Brightness, Brightness
+  Center RGB: (139, 134, 127)  Bottom-right RGB: (120, 120, 120)
+  PASS: two independent brightness layers
+
+Demo complete: 18 PNG files written.
