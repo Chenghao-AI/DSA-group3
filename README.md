@@ -25,4 +25,5 @@
 src/decorator/   装饰器模式示例代码
 src/chain/       责任链模式示例代码
 docs/            讲义、PPT、笔记、资料索引
+docs/decorator/  装饰器模式 PPT（类图页）
 ```
